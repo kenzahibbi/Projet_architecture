@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.uvsq.yuzu.controllers.reservations.ReservationsNewController">
+   <children>
+      <Label text="Création d'une réservation" />
+      
+      <Label fx:id="error" text="" textFill="Red" />
+
+      <Label text="Personne" />
+      
+      <ComboBox fx:id="reservationPerson" promptText="Select" />
+      
+      <Label text="Salle" />
+      
+      <ComboBox fx:id="reservationRoom" promptText="Select" />
+      
+      <Label text="Créneau" />
+      
+      <ComboBox fx:id="reservationTimeslot" promptText="Select" />
+      
+      <Button fx:id="primaryButton" text="Annuler" onAction="#goToReservationIndex"/>
+      
+      <Button fx:id="primaryButton" text="Créer" onAction="#createReservation"/>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

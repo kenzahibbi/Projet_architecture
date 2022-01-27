@@ -1,0 +1,593 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is the OpenAPI description of the API exposed by ArchiLog Project Phase2 server side. Created by AZZAHRAOUI NAJAH, CHERIF Jihene, HIBBI Kenza, HOFFER MAX",
+    "version": "1.0.0",
+    "title": "PHASE2"
+  },
+  "host": "localhost:4567",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/createPerson": {
+      "post": {
+        "tags": [
+          "Create a person"
+        ],
+        "summary": "Create a person",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Create a person",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreatePerson"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnOk"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/deletePerson": {
+      "post": {
+        "tags": [
+          "Delete a person"
+        ],
+        "summary": "Delete a person",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Delete a person",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreatePerson"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnOk"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/createRoom": {
+      "post": {
+        "tags": [
+          "Create a room"
+        ],
+        "summary": "Create a room",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Create a room",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateRoom"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnOk"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/deleteRoom": {
+      "post": {
+        "tags": [
+          "Delete a room"
+        ],
+        "summary": "Delete a room",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Delete a room",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateRoom"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnOk"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/createTimeSlot": {
+      "post": {
+        "tags": [
+          "Create a timeslot"
+        ],
+        "summary": "Create a timeslot",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Create a timeslot",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateTimeSlot"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnOk"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/deleteTimeSlot": {
+      "post": {
+        "tags": [
+          "Delete a timeslot"
+        ],
+        "summary": "Delete a timeslot",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Delete a timeslot",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateTimeSlot"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnOk"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/createReservation": {
+      "post": {
+        "tags": [
+          "Create a reservation"
+        ],
+        "summary": "Create a reservation",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Create a reservation",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateReservation"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnOk"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/deleteReservation": {
+      "post": {
+        "tags": [
+          "Delete a reservation"
+        ],
+        "summary": "Delete a reservation",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Delete a reservation",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateReservation"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnOk"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/getPersonData": {
+      "get": {
+        "tags": [
+          "Get all persons"
+        ],
+        "summary": "Get all persons",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/GetPersons"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/getTimeSlotData": {
+      "get": {
+        "tags": [
+          "Get all timeslots"
+        ],
+        "summary": "Get all timeslots",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/GetTimeSlot"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/getTimeRoomData": {
+      "get": {
+        "tags": [
+          "Get all room"
+        ],
+        "summary": "Get all room",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/GetRooms"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    },
+    "/getReservationData": {
+      "get": {
+        "tags": [
+          "Get all reservations"
+        ],
+        "summary": "Get all reservations",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/GetReservations"
+            }
+          },
+          "405": {
+            "description": "Invalid input",
+            "schema": {
+              "$ref": "#/definitions/BasicReturnError"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "BasicReturnOk": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "string",
+          "example": "ok"
+        }
+      }
+    },
+    "BasicReturnError": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "string",
+          "example": "error"
+        }
+      }
+    },
+    "CreatePerson": {
+      "type": "object",
+      "properties": {
+        "personId": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "example": "Student"
+        }
+      }
+    },
+    "CreateRoom": {
+      "type": "object",
+      "properties": {
+        "roomId": {
+          "type": "string"
+        },
+        "roomName": {
+          "type": "string"
+        },
+        "capacity": {
+          "type": "string"
+        },
+        "buildingName": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateTimeSlot": {
+      "type": "object",
+      "properties": {
+        "timeSlotId": {
+          "type": "string"
+        },
+        "day": {
+          "type": "string",
+          "example": ":\"jj/mm/aaaa\""
+        },
+        "start": {
+          "type": "string",
+          "example": "hh:mm"
+        },
+        "end": {
+          "type": "string",
+          "example": "hh:mm"
+        }
+      }
+    },
+    "CreateReservation": {
+      "type": "object",
+      "properties": {
+        "personId": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "example": "Student"
+        },
+        "timeSlotId": {
+          "type": "string"
+        },
+        "day": {
+          "type": "string",
+          "example": ":\"jj/mm/aaaa\""
+        },
+        "start": {
+          "type": "string",
+          "example": "hh:mm"
+        },
+        "end": {
+          "type": "string",
+          "example": "hh:mm"
+        },
+        "roomId": {
+          "type": "string"
+        },
+        "roomName": {
+          "type": "string"
+        },
+        "capacity": {
+          "type": "string"
+        },
+        "buildingName": {
+          "type": "string"
+        }
+      }
+    },
+    "GetReservations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/CreateReservation"
+      }
+    },
+    "GetPersons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/CreatePerson"
+      }
+    },
+    "GetRooms": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/CreateRoom"
+      }
+    },
+    "GetTimeSlot": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/CreateTimeSlot"
+      }
+    }
+  }
+}
